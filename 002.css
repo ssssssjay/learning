@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* div {
+    width: 200px;
+    height: 200px;
+    border: 10px solid aquamarine;
+} */
+
+.one {
+    margin-bottom: 30px;
+}
+.two {
+    margin-top: 60px;
+}
+
+.parent {
+    /* width: 200px; */
+    /* height: 200px; */
+    background: orange;
+    margin-top: 30px;
+    /* padding: 10px; */
+    /* overflow: hidden; */
+    /* display: inline-block; */
+    /* border: 1px solid black; */
+}
+.child {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    background: royalblue;
+}
