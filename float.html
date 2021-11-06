@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        /* div {
+            background: violet;
+        }
+        span {
+            background: turquoise;
+        } */
+        ul {
+            padding: 0;
+            margin: 0;
+            border: 5px solid black;
+        }
+         .left-container {
+            overflow: hidden;
+        }
+        .right-container {
+
+        }
+        /* .right-container::after {
+            content: '';
+            display: block;
+            clear: both;
+        } */
+        .left {
+            list-style: none;
+            float: left;
+        }
+        .right {
+            list-style: none;
+            float: right;
+            /* clear: both; */
+        }
+        li:nth-child(1) {
+            background: lightblue;
+        }
+        li:nth-child(2) {
+            background: lightcoral;
+        }
+        li:nth-child(3) {
+            background: lightslategray;
+        }
+
+        .a {
+            float: left;
+        }
+        .b {
+            float: right;
+        }
+
+        .box1 {
+            background: cadetblue;
+            float: left;
+        }
+        .box2 {
+            background: brown;
+            float: left;
+        }
+        .box3 {
+            background: lightsteelblue;
+            float: right;
+            /* clear: both; */
+        }
+        .asdf {
+            margin-top: 40px;
+            border: 1px solid black;
+        }
+        .box4 {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>block</div>
+    <img src="./x.png" alt="" style="width:200px;">
+    <span>inline</span>
+    <span style="width:200px;">inline</span>
+    <div style="width: 100px;">block</div>
+    <div style="width: 50px;">block</div>
+    <span>inline</span>
+    <div>block</div> -->
+        <p>float처리 하지 않음</p>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+        <p>띄워서 왼쪽으로 나열</p>
+    <ul class="left-container">
+        <li class="left">List 1</li>
+        <li class="left">List 2</li>
+        <li class="left">List 3</li>
+    </ul>
+        <p>띄워서 오른쪽으로 나열</p>
+    <ul class="right-container" style="margin-top: 10px; margin-bottom: 20px;">
+        <li class="right">List 1</li>
+        <li class="right">List 2</li>
+        <li class="right">List 3</li>
+    </ul>
+
+
+    <ul >
+        <li style="float: left;">List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+    <!-- <footer>
+        <section class="a">
+            <a href="#">login</a>
+            <a href="#">password</a>
+        </section>
+        <section class="b">
+            <div>signin</div>
+        </section>
+    </footer> -->
+
+    <div class="asdf">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">ss</div>
+    </div>
+
+    
+</body>
+</html>

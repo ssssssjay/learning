@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .box1 {
+            background: #9FB8B4;
+        }
+        .box2 {
+            background: #6C8184;
+            /* opacity: .5; */
+        }
+        .box3 {
+            background: #755356;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+        <div class="box1">부모
+            <div class="box2">자식
+                <div class="box3">자손</div>
+            </div>
+        </div>
+
+
+</body>
+</html>
