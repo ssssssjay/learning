@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes dudung {
+            0% {
+                transform: translate(0, -400px);
+            }
+            12.5% {
+                transform: translate(0, -40px);
+
+            }
+            25% {
+                transform: translate(0, -40px) rotate(30deg);
+            }
+            37.5% {
+                transform: translate(0, -60px) rotate(0);
+
+            }
+            50% {
+                transform: translate(0, -60px) rotate(-20deg);
+
+            }
+            62.5% {
+                transform: translate(0, -60px);
+
+            }
+            85% {
+                transform: translate(0, -20px);
+
+            }
+            100% {
+                transform: translate(0, 0);
+
+            }
+
+        }
+        @keyframes syung{
+            0% {
+                transform: translate(-1000px, 0);
+            }
+            10% {
+                transform: translate(100px, 0) rotate(180deg);
+            }
+            30% {
+            transform: translate(300px,0) rotate(3600deg);
+            }
+            50% {
+                transform: translate(500px, -100px) rotate(540deg);
+            }
+            75% {
+                transform: translate(700px, 0) rotate(720deg);
+            }
+            100% {
+                transform: translate(2000px, 0) rotate(720deg);
+            }
+        }
+
+        .box {
+            width: 300px;
+            height: 150px;
+            border-radius: 20px;
+            margin: 500px auto;
+            font-size: 22px;
+            font-weight: bolder;
+            background: dodgerblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            animation: dudung 1s infinite;
+        }
+
+        .box1 {
+            width: 80px;
+            height: 80px;
+            font-weight: bolder;
+            background: dodgerblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            font-size: 22px;
+            animation: syung 1s infinite;
+            animation-timing-function: linear;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">두둥!!!</div>
+    <div class="box1">슝</div>
+</body>
+</html>
