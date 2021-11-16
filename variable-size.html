@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable-size</title>
+    <style>
+        div {
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .calc {
+            width: calc(100% - 100px);
+            float: right;
+        }
+        .min-width {
+            min-width: 600px;
+            clear: both;
+        }
+        .max-width {
+            max-width: 600px;
+        }
+        .px {
+            width: 100px;
+        }
+        .percent {
+            width: 100%;
+        }
+        .vw {
+            width: 50vw;
+        }
+        .vmin {
+            width: 50vmin;
+        }
+        .min {
+            width: min(40%, 150px);
+        }
+        .max {
+            width: max(40%, 150px);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="calc">calc(100% - 100px)</div>
+    <div class="min-width">min-width: 600px</div>
+    <div class="max-width">max-width: 600px</div>
+    <div class="px">100px</div>
+    <div class="percent">100percent</div>
+    <div class="vw">50vw</div>
+    <div class="vmin">50vmin</div>
+    <div class="min">min(40%, 150px)</div>
+    <div class="max">max(40%, 150px)</div>
+
+</body>
+</html>
